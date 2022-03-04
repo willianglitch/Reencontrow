@@ -139,7 +139,7 @@ span{
     flex-direction: column;
 }
 .title-content-02 h1{
-    font-size: 55px;
+    font-size: 35px;
     color: #fff;
     line-height: 50px;
     margin-top: 65px;
@@ -166,8 +166,55 @@ span{
     color: #fff;
     background-color: #52585a  ;
 }
-.section-image-02 img{
+.section-image-02  img{
     height: 443px;
     width: 326px;
     margin-left: 100px;
+}
+
+
+/* ================================== SECTION-04 ==================== */
+
+.area-form{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    /* flex direction para deixar alinhado de cima para baixo */
+    flex-direction: column;
+    /* e agora um align items para que ele fique em seu devido lugar  */
+    align-items: center;
+}
+.area-form h2{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+.form-organization form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    height: 300px;
+    width: 400px;
+}
+.form-organization input{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* primeira vez utilizando essa forma de acessor para estilizar
+ os elementos  */
+input::placeholder{
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'oswald'; 
+}
+/* primeira vez utilizando essa forma de acessar também */
+input[type="submit"]{
+    background-color: #1A7993;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 70px;
+    cursor: pointer;
 }
