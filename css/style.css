@@ -176,7 +176,7 @@ span{
 /* ================================== SECTION-04 ==================== */
 
 .area-form{
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     /* flex direction para deixar alinhado de cima para baixo */
@@ -193,7 +193,7 @@ span{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    height: 300px;
+    height: 250px;
     width: 400px;
 }
 .form-organization input{
@@ -217,4 +217,22 @@ input[type="submit"]{
     color: #fff;
     height: 70px;
     cursor: pointer;
+}
+
+
+/*========================================== footer ==================================*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.content h3{
+    color: #fff;
+    font-weight: normal;
+    padding-bottom: 5px ;
+}
+.icon img{
+    height: 40px;
+    margin-left: 10px;
 }
