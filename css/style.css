@@ -9,6 +9,7 @@
 body{
     background-color: #15161B;
     font-family: oswald;
+    box-sizing: border-box;  
 }
 
 /* ESSA MEDIDA PARA ALINHAR   O HEADER NO CENTRO*/
@@ -74,6 +75,7 @@ span{
 }
 
 /* ================================== SECTION-02 ==================== */
+
 .section-02{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -236,12 +238,94 @@ input[type="submit"]{
     margin-left: 10px;
 }
 
+/* ===============================  MEDIA QUERIES ========================= */
+
 @media(max-width: 850px){
+
+    /* ================================== SECTION-01 ==================== */
+
     .section-01{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 0px;
+        margin-top: 100px;
     }
+    .title-content a{
+        margin-bottom: 50px;
+    }
+    .section-image img{
+        width: 330px;
+        /* NO CASO ELE MESMO APARTIR DA LARGURA ENCONTRAR A ALTURA */
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 150px;
+    }
+
+    /* ================================== SECTION-02 ==================== */
+
+    .section-02{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CARDS-POSITION{
+        display: flex;
+        /* justify-content: space-around; */
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        
+       
+    }
+    .CARDS{
+        background-color: #2C2F37;
+        width: 200px;
+        height: 180px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ================================== SECTION-03 ==================== */
+
+    .section-03{
+        height: 843px;
+        background-color: #1A7993;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 300px;
+    }
+    .title-content-02{
+        display: inline-block;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .section-image-02  img{
+        height: 460px;
+        width: 326px;
+        margin-left: 50px;
+    }
+    .area-form{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        /* flex direction para deixar alinhado de cima para baixo */
+        flex-direction: column;
+        /* e agora um align items para que ele fique em seu devido lugar  */
+        align-items: center;
+        padding: 10px;
+    }
+    
 }
